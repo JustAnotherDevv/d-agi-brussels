@@ -25,13 +25,13 @@ export default function IndexPage() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Sponsors />
+      {/* <Hero /> */}
+      {/* <Sponsors /> */}
       <Features />
-      <Pricing />
-      <FAQ />
-      <CTA />
-      <Footer />
+      {/* <Pricing /> */}
+      {/* <FAQ /> */}
+      {/* <CTA /> */}
+      {/* <Footer /> */}
     </>
   );
 }
