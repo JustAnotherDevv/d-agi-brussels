@@ -167,3 +167,71 @@ button:hover {
     margin-left: 20px;
   }
 }
+
+
+
+
+
+
+
+
+.conversation-container {
+  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.messages {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 500px; /* Adjust max height as needed */
+}
+
+.message-container {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-box {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ccc; /* Adjust as needed */
+  align-self: flex-start;
+  max-width: 70%;
+}
+
+.message-container.user .sender-box {
+  align-self: flex-end;
+}
+
+.message {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 70%;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background-color: #e0f7fa; /* Light blue for bot messages */
+  border-radius: 15px 15px 15px 0;
+  text-align: left;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #e1bee7; /* Light purple for user messages */
+  border-radius: 15px 15px 0 15px;
+  text-align: right;
+}
+
+.sender {
+  font-weight: bold;
+}
+
+.text {
+  word-wrap: break-word;
+}

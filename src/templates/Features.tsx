@@ -57,7 +57,19 @@ const Features = () => {
     // Process the recorded audio data blob here
   };
 
+  /*
+    chat Bubble
+  */
+    const [messages, setMessages] = useState([
+      { text: "Hello! How can I help you today?", sender: 'bot' },
+      { text: "Hi there! I'm looking for some information.", sender: 'user B' },
+      { text: "Sure! What do you need help with?", sender: 'user A' },
+      { text: "Sure! What do you need help with?", sender: 'bot' },
+      // Add more messages as needed
+    ]);
+
   return (
+    <>
     <div className="background">
       <section>
         <div className="controls">
@@ -82,6 +94,24 @@ const Features = () => {
         </div>
       </section>
     </div>
+
+    <div className="background">
+      <div className="conversation-container">
+        <div className="messages">
+          {messages.map((message, index) => (
+            <div key={index} className={`message-container ${message.sender}`}>
+              <div className="sender-box">
+                <span className="sender">{message.sender}</span>
+              </div>
+              <div className={`message ${message.sender}`}>
+                <span className="text">{message.text}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    </>
   );
 };
 
