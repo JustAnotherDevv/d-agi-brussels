@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@soniox/soniox-node": "^1.2.2",
     "express": "^4.19.2"
   }
 }
